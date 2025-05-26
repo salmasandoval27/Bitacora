@@ -1,0 +1,379 @@
+
+
+/* Basic styling for the body of the webpage */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #333; /* Dark background to create contrast */
+}
+
+/* Header styling */
+header {
+  display: flex; /* Flexbox to align logo and menu side-by-side */
+  justify-content: space-between; /* Places logo on the left, menu on the right */
+  align-items: center; /* Vertically centers the items */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  position: fixed; /* Makes header stay at the top while scrolling */
+  width: 100%; /* Full-width header */
+  z-index: 1000; /* Ensures the header stays above other elements */
+}
+
+/* Styling for the logo, including FontAwesome hamburger icon */
+.logo {
+  display: flex; /* Aligns icon and text horizontally */
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Adds margin between the icon and text */
+.logo i {
+  margin-right: 10px;
+}
+
+/* Styling for the navigation menu */
+.menu {
+  list-style: none; /* Removes default bullet points */
+  display: flex; /* Flexbox for horizontal alignment of menu items */
+}
+
+/* Styling for each individual menu item */
+.menu li {
+  margin-left: 20px;
+}
+
+/* Links inside the menu, including hover effect */
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+/* Changes color of the link when hovered over */
+.menu li a:hover {
+  color: #ffbf00; /* Bright yellow color on hover */
+}
+
+/* Hamburger icon styling, only visible on mobile screens */
+.hamburger-icon {
+  display: none; /* Hidden by default on larger screens */
+  flex-direction: column; /* Stacks the spans vertically */
+  cursor: pointer; /* Changes the mouse cursor to indicate clickability */
+}
+
+/* Each span inside the hamburger icon (the three bars) */
+.hamburger-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* White bars for contrast against dark background */
+  margin: 4px 0; /* Spacing between bars */
+  transition: all 0.3s ease; /* Smooth transition for any changes */
+}
+
+
+/* About section styling */
+.about {
+  padding: 60px 20px;
+  background-color: #222; /* Dark background for contrast with text */
+  color: #fff;
+  text-align: center;
+}
+
+/* About section heading */
+.about h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* About section paragraph styling */
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Hide the main navigation menu and show it only when active on small screens */
+  .menu {
+    display: none;
+    flex-direction: column; /* Vertical alignment on mobile */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Display the menu when the hamburger icon is clicked */
+  .menu.active {
+    display: flex;
+  }
+
+  /* Individual menu items in mobile view */
+  .menu li {
+    margin: 10px 0;
+  }
+
+  /* Show the hamburger icon on small screens */
+  .hamburger-icon {
+    display: flex;
+  }
+}
+
+
+
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 700px;
+    border: 1px black solid;
+    margin:  auto;
+    margin-top: 10px;
+}
+
+.flex-item {
+    width: 400px;
+    height: 200px;
+    border: 1px black solid;
+    background: #369;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    
+   
+            box-shadow: 16px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 16px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.fondo {
+    background-color:#222222;
+}
+
+
+
+
+
+
+.container {
+ display: grid;
+ align-items: center; 
+    align-content: center;
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+img {
+  max-width: 100%;
+  max-height:50%;
+}
+
+.text {
+  font-size: 20px;
+    margin-left: 20px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+
+
+.subrayado{
+    align-content: center;
+   padding: 30px;
+    text-align:left;
+    margin: 30px;
+    margin-left: 50px;
+}
+
+
+
+
+.containerdiagrama {
+ display: grid;
+ align-items: center; 
+    align-content: center;
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  max-height:50%;
+}
+
+.text {
+  font-size: 20px;
+    margin-left: 20px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.hex {
+            background-color: #3592d0;
+            color: white;
+        }
+ 
+        .keyword {
+            background-color: red;
+            color: black;
+        }
+ 
+        .rgb {
+            /*Define los niveles de Rojo, Verde y Azul*/
+            background-color: rgb(46, 204, 113);
+            color: white;
+        }
+ 
+        .rgba {
+            background-color: rgba(231, 77, 60, 0.662);
+            color: white;
+        }
+ 
+        .hsl {
+            /*Se basa en el círculo cromatico
+        h = Hue (tono, 0–360°, como un ángulo en el círculo de color)
+        s = Saturation (saturación, 0%–100%)
+        l = Lightness (luminosidad, 0%–100%)
+        */
+            background-color: hsl(200, 64%, 51%);
+            color: white;
+        }
+ 
+        .hsla {
+            background-color: hsla(300, 100%, 50%, 0.604);
+            color: white;
+        }
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+
+
+
+
+.video {
+   
+    margin-top: 60px;
+    padding: 40px;
+    margin-bottom: 80px;
+}
+.text{
+    margin-bottom: 20px;
+}
+
+
+
+
+
